@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 
 # Set the solver we're going to use
 
-## TODO:  Add sampler here
+## TODO:  Import packages and add sampler here
 
 # Create empty graph
 G = nx.Graph()
