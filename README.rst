@@ -25,4 +25,4 @@ Exercise 3
 Open ``change_problem.py``.  This file is identical to ``original_program.py``, but is missing the following things:  (1) a graph definition, and (2) a graph algorithm from dwave-networkx.  Fill in the gaps in this program to solve the minimum vertex cover on the following graph.
 
 .. image:: images/new_graph.png
-    :width: 300
+    :width: 100
