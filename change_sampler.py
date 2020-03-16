@@ -54,7 +54,7 @@ plt.savefig(original_name, bbox_inches='tight')
 
 # Save solution graph
 # Note: red nodes are in the set, blue nodes are not
-solution_name = "antenna_plot_solution.png"
+solution_name = "simulated_annealing_solution.png"
 nx.draw_networkx(k, pos=pos, with_labels=True, node_color='r', font_color='k')
 nx.draw_networkx(othersubgraph, pos=pos, with_labels=True, node_color='b', font_color='w')
 plt.savefig(solution_name, bbox_inches='tight')
