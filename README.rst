@@ -8,6 +8,7 @@ Exercise 1
 ----------
 
 Run ``original_program.py``.  Read through the code and take a look at the structure of the program.  In particular, pay attention to:
+
 - How are we creating the graph structure?
 - How are we defining and calling our sampler?
 
@@ -16,7 +17,7 @@ Exercise 2
 
 Open ``change_sampler.py``.  This file is identical to ``original_program.py``, but does not have a sampler defined.  Set up your sampler to run the simulated annealing algorithm.
 
-Note:  Don't forget to import the package where the sampler lives.  You may find the `Ocean documentation <docs.ocean.dwavesys.com>`_ handy.
+Note:  Don't forget to import the package where the sampler lives.  You may find the `Ocean documentation <docs.ocean.dwavesys.com>`_ useful.
 
 Exercise 3
 ----------
