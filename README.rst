@@ -19,4 +19,4 @@ Note:  Don't forget to import the package where the sampler lives.  You may find
 Open `change-problem.py`.  This file is identical to `original_program.py`, but is missing the following things:  (1) a graph definition, and (2) a graph algorithm from dwave-networkx.  Fill in the gaps in this program to solve the minimum vertex cover on the following graph.
 
 .. image:: images/new_graph.png
-   :width: 600
+    :width: 600
