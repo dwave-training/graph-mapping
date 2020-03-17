@@ -1,5 +1,6 @@
 =============
-Graph Mapping =============
+Graph Mapping 
+=============
 
 To start this exercise, we'll look at a complete Ocean program that uses the
 package ``dwave-networkx``.  D-Wave NetworkX is an extension of NetworkX—a
