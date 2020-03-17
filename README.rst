@@ -9,7 +9,8 @@ algorithms—for users of D-Wave Systems.  The base problem of this exercise is
 the antenna selection problem from the `D-Wave Collection of Examples
 <https://github.com/dwave-examples/antenna-selection>`_.
 
-Exercise 1 ----------
+Exercise 1 
+----------
 
 Run ``original_program.py``.  Read through the code and take a look at the
 structure of the program.  In particular, pay attention to:
@@ -17,7 +18,8 @@ structure of the program.  In particular, pay attention to:
 - How are we creating the graph structure?
 - How are we defining and calling our sampler?
 
-Exercise 2 ----------
+Exercise 2 
+----------
 
 Open ``change_sampler.py``.  This file is identical to ``original_program.py``,
 but does not have a sampler defined.  Set up your sampler to run the simulated
@@ -26,7 +28,8 @@ annealing algorithm.
 Note:  Don't forget to import the package where the sampler lives.  You may find
 the `Ocean documentation <docs.ocean.dwavesys.com>`_ useful.
 
-Exercise 3 ----------
+Exercise 3 
+----------
 
 Open ``change_problem.py``.  This file is identical to ``original_program.py``,
 but is missing the following things:  (1) a graph definition, and (2) a graph
