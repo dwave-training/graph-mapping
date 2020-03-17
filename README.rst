@@ -2,7 +2,8 @@
 Graph Mapping =============
 
 To start this exercise, we'll look at a complete Ocean program that uses the
-package ``dwave-networkx``.  D-Wave NetworkX is an extension of NetworkX—a Python language package for exploration and analysis of networks and network
+package ``dwave-networkx``.  D-Wave NetworkX is an extension of NetworkX—a
+Python language package for exploration and analysis of networks and network
 algorithms—for users of D-Wave Systems.  The base problem of this exercise is
 the antenna selection problem from the `D-Wave Collection of Examples
 <https://github.com/dwave-examples/antenna-selection>`_.
