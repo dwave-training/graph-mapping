@@ -24,7 +24,6 @@ matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
 # Set the solver we're going to use
-# Set the solver we're going to use
 def set_sampler():
     from dwave.system.samplers import DWaveSampler
     from dwave.system.composites import EmbeddingComposite
