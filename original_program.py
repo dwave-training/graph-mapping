@@ -31,7 +31,7 @@ def set_sampler():
     from dwave.system.samplers import DWaveSampler
     from dwave.system.composites import EmbeddingComposite
 
-    sampler = EmbeddingComposite(DWaveSampler(token=token, solver={'qpu': True}))
+    sampler = EmbeddingComposite(DWaveSampler(endpoint='https://cloud.dwavesys.com/sapi/', token=token, solver={'qpu': True}))
 
     return sampler
 
