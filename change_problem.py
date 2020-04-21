@@ -24,44 +24,60 @@ matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
 # Set the solver we're going to use
-from dwave.system.samplers import DWaveSampler
-from dwave.system.composites import EmbeddingComposite
+def set_sampler():
+    from dwave.system.samplers import DWaveSampler
+    from dwave.system.composites import EmbeddingComposite
 
-sampler = EmbeddingComposite(DWaveSampler(solver={'qpu': True}))
+    sampler = EmbeddingComposite(DWaveSampler(solver={'qpu': True}))
 
-# Create empty graph
-G = nx.Graph()
+    return sampler
 
-# Add edges to graph - this also adds the nodes
+def create_graph():
+    # Create empty graph
+    G = nx.Graph()
 
-## TODO:  Update graph to new problem graph
+    ## TODO:  Update graph to new problem graph
 
-# Find the maximum independent set, S
+    return G
+
+def solve_problem(G, sampler):
+
+    ## TODO:  Update dwave-networkx function to new problem function
+
+    return 
 
 
-## TODO:  Update dwave-networkx function to new problem function
+## ------- Main program -------
+if __name__ == "__main__":
 
-# Print the solution for the user
-print('Minimum vertex cover size found is', len(S))
-print(S)
+    G = create_graph()
 
-# Visualize the results
-k = G.subgraph(S)
-notS = list(set(G.nodes()) - set(S))
-othersubgraph = G.subgraph(notS)
-pos = nx.spring_layout(G)
-plt.figure()
+    sampler = set_sampler()
 
-# Save original problem graph
-original_name = "vertex_cover_original.png"
-nx.draw_networkx(G, pos=pos, with_labels=True)
-plt.savefig(original_name, bbox_inches='tight')
+    # Find the maximum independent set, S
+    S = solve_problem(G, sampler)
 
-# Save solution graph
-# Note: red nodes are in the set, blue nodes are not
-solution_name = "vertex_cover_solution.png"
-nx.draw_networkx(k, pos=pos, with_labels=True, node_color='r', font_color='k')
-nx.draw_networkx(othersubgraph, pos=pos, with_labels=True, node_color='b', font_color='w')
-plt.savefig(solution_name, bbox_inches='tight')
+    # Print the solution for the user
+    print('Minimum vertex cover size found is', len(S))
+    print(S)
 
-print("Your plots are saved to {} and {}".format(original_name, solution_name))
+    # Visualize the results
+    k = G.subgraph(S)
+    notS = list(set(G.nodes()) - set(S))
+    othersubgraph = G.subgraph(notS)
+    pos = nx.spring_layout(G)
+    plt.figure()
+
+    # Save original problem graph
+    original_name = "vertex_cover_original.png"
+    nx.draw_networkx(G, pos=pos, with_labels=True)
+    plt.savefig(original_name, bbox_inches='tight')
+
+    # Save solution graph
+    # Note: red nodes are in the set, blue nodes are not
+    solution_name = "vertex_cover_solution.png"
+    nx.draw_networkx(k, pos=pos, with_labels=True, node_color='r', font_color='k')
+    nx.draw_networkx(othersubgraph, pos=pos, with_labels=True, node_color='b', font_color='w')
+    plt.savefig(solution_name, bbox_inches='tight')
+
+    print("Your plots are saved to {} and {}".format(original_name, solution_name))
