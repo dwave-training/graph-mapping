@@ -41,7 +41,7 @@ def create_graph():
 
     return G
 
-def solve_problem():
+def solve_problem(G, sampler):
 
     # Find the maximum independent set, S
     S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     sampler = set_sampler()
 
-    S = solve_problem()
+    S = solve_problem(G, sampler)
 
     # Print the solution for the user
     print('Maximum independent set size found is', len(S))
