@@ -49,7 +49,6 @@ def solve_problem(G, sampler):
 
     return 
 
-
 ## ------- Main program -------
 if __name__ == "__main__":
 
