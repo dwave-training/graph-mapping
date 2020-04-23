@@ -70,9 +70,9 @@ if __name__ == "__main__":
     print(S)
 
     # Visualize the results
-    k = G.subgraph(S)
+    subset_1 = G.subgraph(S)
     notS = list(set(G.nodes()) - set(S))
-    othersubgraph = G.subgraph(notS)
+    subset_0 = G.subgraph(notS)
     pos = nx.spring_layout(G)
     plt.figure()
 
@@ -84,8 +84,8 @@ if __name__ == "__main__":
     # Save solution graph
     # Note: red nodes are in the set, blue nodes are not
     solution_name = "simulated_annealing_solution.png"
-    nx.draw_networkx(k, pos=pos, with_labels=True, node_color='r', font_color='k')
-    nx.draw_networkx(othersubgraph, pos=pos, with_labels=True, node_color='b', font_color='w')
+    nx.draw_networkx(subset_1, pos=pos, with_labels=True, node_color='r', font_color='k')
+    nx.draw_networkx(subset_0, pos=pos, with_labels=True, node_color='b', font_color='w')
     plt.savefig(solution_name, bbox_inches='tight')
 
     print("Your plots are saved to {} and {}".format(original_name, solution_name))
