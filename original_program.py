@@ -47,6 +47,16 @@ def create_graph():
     return G
 
 def solve_problem(G, sampler):
+    '''Returns a solution to to the minimum vertex cover on graph G using 
+    the D-Wave QPU.
+
+    Args:
+        G(networkx.Graph): a graph representing a problem
+        sampler(dimod.Sampler): sampler used to find solutions
+
+    Returns:
+        A list of nodes
+    '''
 
     # Find the maximum independent set, S
     S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
