@@ -32,7 +32,8 @@ token = 'YOUR-TOKEN-HERE'
 # Set the solver we're going to use
 def set_sampler():
 
-    sampler = EmbeddingComposite(DWaveSampler(endpoint='https://cloud.dwavesys.com/sapi/', token=token, solver={'qpu': True}))
+    sampler = EmbeddingComposite(DWaveSampler(endpoint='https://cloud.dwavesys.com/sapi/', 
+                                              token=token, solver={'qpu': True}))
 
     return sampler
 
