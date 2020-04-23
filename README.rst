@@ -12,9 +12,9 @@ the antenna selection problem from the `D-Wave Collection of Examples
 Exercise 1 
 ----------
 
-Enter your token on line 27 and run ``original_program.py``.  Read through the 
-code and take a look at the structure of the program.  In particular, pay 
-attention to:
+Enter your token on line 27 of ``original_program.py`` and run the program.  
+Read through the code and take a look at the structure of the program.  In 
+particular, pay attention to:
 
 - How are we creating the graph structure?
 - How are we defining and calling our sampler?
