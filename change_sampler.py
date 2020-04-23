@@ -25,6 +25,7 @@ import matplotlib.pyplot as plt
 
 # Set the solver we're going to use
 def set_sampler():
+    '''Returns a simulated annealing sampler'''
     
     ## TODO:  Import packages and add sampler here
 
