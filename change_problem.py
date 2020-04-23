@@ -18,6 +18,9 @@ import networkx as nx
 # Import dwave_networkx for d-wave graph tools/functions
 import dwave_networkx as dnx
 
+# Import dwave.system packages for the QPU
+from dwave.system import DWaveSampler, EmbeddingComposite
+
 # Import matplotlib.pyplot to draw graphs on screen
 import matplotlib
 matplotlib.use("agg")
