@@ -27,7 +27,7 @@ but does not have a sampler defined.  Set up your sampler in the ``set_sampler``
 function to run the simulated annealing algorithm.
 
 Note:  Don't forget to import the package where the sampler lives.  You may find
-the `Ocean documentation <docs.ocean.dwavesys.com>`_ useful.
+the `Ocean documentation <https://docs.ocean.dwavesys.com/en/stable/>`_  useful.
 
 Exercise 3 
 ----------
