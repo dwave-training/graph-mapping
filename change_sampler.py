@@ -24,39 +24,70 @@ matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
 # Set the solver we're going to use
+def set_sampler():
+    '''Returns a simulated annealing sampler'''
+    
+    ## TODO:  Import packages and add sampler here
 
-## TODO:  Import packages and add sampler here
+    return 
 
-# Create empty graph
-G = nx.Graph()
+def create_graph():
+    # Create empty graph
+    G = nx.Graph()
 
-# Add edges to graph - this also adds the nodes
-G.add_edges_from([(1, 2), (1, 3), (2, 3), (3, 4), (3, 5), (4, 5), (4, 6), (5, 6), (6, 7)])
+    # Add edges to graph - this also adds the nodes
+    G.add_edges_from([(1, 2), (1, 3), (2, 3), (3, 4), (3, 5), 
+                        (4, 5), (4, 6), (5, 6), (6, 7)])
 
-# Find the maximum independent set, S
-S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
+    return G
 
-# Print the solution for the user
-print('Maximum independent set size found is', len(S))
-print(S)
+def solve_problem(G, sampler):
+    '''Returns a solution to the maximum independent set problem on graph G 
+    using the simulated annealing sampler.
 
-# Visualize the results
-k = G.subgraph(S)
-notS = list(set(G.nodes()) - set(S))
-othersubgraph = G.subgraph(notS)
-pos = nx.spring_layout(G)
-plt.figure()
+    Args:
+        G(networkx.Graph): a graph representing a problem
+        sampler(dimod.Sampler): sampler used to find solutions
 
-# Save original problem graph
-original_name = "antenna_plot_original.png"
-nx.draw_networkx(G, pos=pos, with_labels=True)
-plt.savefig(original_name, bbox_inches='tight')
+    Returns:
+        A list of nodes
+    '''
 
-# Save solution graph
-# Note: red nodes are in the set, blue nodes are not
-solution_name = "simulated_annealing_solution.png"
-nx.draw_networkx(k, pos=pos, with_labels=True, node_color='r', font_color='k')
-nx.draw_networkx(othersubgraph, pos=pos, with_labels=True, node_color='b', font_color='w')
-plt.savefig(solution_name, bbox_inches='tight')
+    # Find the maximum independent set, S
+    S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
 
-print("Your plots are saved to {} and {}".format(original_name, solution_name))
+    return S
+
+## ------- Main program -------
+if __name__ == "__main__":
+
+    G = create_graph()
+
+    sampler = set_sampler()
+
+    S = solve_problem(G, sampler)
+
+    # Print the solution for the user
+    print('Maximum independent set size found is', len(S))
+    print(S)
+
+    # Visualize the results
+    subset_1 = G.subgraph(S)
+    notS = list(set(G.nodes()) - set(S))
+    subset_0 = G.subgraph(notS)
+    pos = nx.spring_layout(G)
+    plt.figure()
+
+    # Save original problem graph
+    original_name = "antenna_plot_original.png"
+    nx.draw_networkx(G, pos=pos, with_labels=True)
+    plt.savefig(original_name, bbox_inches='tight')
+
+    # Save solution graph
+    # Note: red nodes are in the set, blue nodes are not
+    solution_name = "simulated_annealing_solution.png"
+    nx.draw_networkx(subset_1, pos=pos, with_labels=True, node_color='r', font_color='k')
+    nx.draw_networkx(subset_0, pos=pos, with_labels=True, node_color='b', font_color='w')
+    plt.savefig(solution_name, bbox_inches='tight')
+
+    print("Your plots are saved to {} and {}".format(original_name, solution_name))
