@@ -12,7 +12,7 @@ the antenna selection problem from the `D-Wave Collection of Examples
 Exercise 1 
 ----------
 
-Enter your token on line 30 of ``original_program.py`` and run the program.  
+Enter your token on line 33 of ``original_program.py`` and run the program.  
 Read through the code and take a look at the structure of the program.  In 
 particular, pay attention to:
 
