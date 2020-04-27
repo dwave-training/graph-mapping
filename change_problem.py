@@ -26,7 +26,7 @@ import matplotlib
 matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
-def set_token():
+def get_token():
     '''Return your personal access token'''
     
     # TODO: Enter your token here
@@ -36,7 +36,7 @@ def set_token():
 def set_sampler():
     '''Returns a dimod sampler'''
 
-    token = set_token()
+    token = get_token()
     sampler = EmbeddingComposite(DWaveSampler(endpoint='https://cloud.dwavesys.com/sapi/', 
                                               token=token, solver={'qpu': True}))
 
