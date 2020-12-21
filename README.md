@@ -4,11 +4,12 @@ To start this exercise, we'll look at a complete Ocean program that uses the
 package ``dwave-networkx``.  D-Wave NetworkX is an extension of NetworkX—a
 Python language package for exploration and analysis of networks and network
 algorithms—for users of D-Wave Systems.  The base problem of this exercise is
-the antenna selection problem from the [D-Wave Collection of Examples](https://github.com/dwave-examples/antenna-selection).
+the antenna selection problem from the [D-Wave Collection of
+Examples](https://github.com/dwave-examples/antenna-selection).
 
 ## Exercise 1
 
-Enter your token on line 30 of ``original_program.py`` and run the program.  
+Enter your token on line 30 of ``original_program.py`` and run the program.
 Read through the code and take a look at the structure of the program.  In
 particular, pay attention to:
 
@@ -18,11 +19,12 @@ particular, pay attention to:
 ## Exercise 2
 
 Open ``change_sampler.py``.  This file is identical to ``original_program.py``,
-but does not have a sampler defined.  Set up your sampler in the ``set_sampler``
-function to run the simulated annealing algorithm.
+but does not have a sampler defined.  Set up your sampler in the
+``set_sampler`` function to run the simulated annealing algorithm.
 
-Note:  Don't forget to import the package where the sampler lives.  You may find
-the [Ocean documentation](https://docs.ocean.dwavesys.com/en/stable/)  useful.
+Note:  Don't forget to import the package where the sampler lives.  You may
+find the [Ocean documentation](https://docs.ocean.dwavesys.com/en/stable/)
+useful.
 
 ## Exercise 3
 
