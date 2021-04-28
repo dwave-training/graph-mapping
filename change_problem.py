@@ -51,7 +51,7 @@ def create_graph():
     return G
 
 def solve_problem(G, sampler):
-    '''Returns a solution to to the minimum vertex cover on graph G using 
+    '''Returns a solution to the minimum vertex cover on graph G using 
     the D-Wave QPU.
 
     Args:
