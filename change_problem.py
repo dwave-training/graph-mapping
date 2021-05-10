@@ -37,8 +37,7 @@ def set_sampler():
     '''Returns a dimod sampler'''
 
     token = get_token()
-    sampler = EmbeddingComposite(DWaveSampler(endpoint='https://cloud.dwavesys.com/sapi/', 
-                                              token=token, solver={'qpu': True}))
+    sampler = EmbeddingComposite(DWaveSampler())
 
     return sampler
 
