@@ -36,3 +36,7 @@ following graph.  You will also need to input your token at the start of the
 program.
 
 ![New Graph](images/new_graph.png "New Graph")
+
+## License
+
+Released under the Apache License 2.0. See [LICENSE](LICENSE) file.
