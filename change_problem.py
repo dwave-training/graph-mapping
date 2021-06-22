@@ -36,7 +36,6 @@ def get_token():
 def set_sampler():
     '''Returns a dimod sampler'''
 
-    token = get_token()
     sampler = EmbeddingComposite(DWaveSampler())
 
     return sampler
