@@ -9,7 +9,8 @@ Examples](https://github.com/dwave-examples/antenna-selection).
 
 ## Exercise 1
 
-Enter your token on line 33 of ``original_program.py`` and run the program.
+Enter your token in the ``get_token`` function of ``original_program.py`` and
+run the program. You should replace ``YOUR-TOKEN-HERE`` with your token.
 Read through the code and take a look at the structure of the program.  In
 particular, pay attention to:
 
