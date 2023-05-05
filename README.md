@@ -1,3 +1,8 @@
+[![Open in Leap IDE](	
+	https://cdn-assets.cloud.dwavesys.com/shared/latest/badges/leapide.svg)](
+	https://ide.dwavesys.io/#https://github.com/dwave-training/graph-mapping)
+
+
 # Graph Mapping
 
 To start this exercise, we'll look at a complete Ocean program that uses the
