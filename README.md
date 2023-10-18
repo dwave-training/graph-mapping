@@ -14,9 +14,7 @@ Examples](https://github.com/dwave-examples/antenna-selection).
 
 ## Exercise 1
 
-Enter your token in the ``get_token`` function of ``original_program.py`` and
-run the program. You should replace ``YOUR-TOKEN-HERE`` with your token.
-Read through the code and take a look at the structure of the program.  In
+Run ``original_program.py``. Read through the code and take a look at the structure of the program.  In
 particular, pay attention to:
 
 - How are we creating the graph structure?
@@ -38,8 +36,7 @@ Open ``change_problem.py``.  This file is identical to ``original_program.py``,
 but is missing the following things:  (1) a graph definition, and (2) a graph
 algorithm from ``dwave-networkx``.  Fill in the functions ``create_graph`` and
 ``solve_problem`` in this program to solve the minimum vertex cover on the
-following graph.  You will also need to input your token at the start of the
-program.
+following graph.  
 
 ![New Graph](images/new_graph.png "New Graph")
 
