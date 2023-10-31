@@ -1,4 +1,7 @@
-
+[![Open in GitHub Codespaces](
+  https://img.shields.io/badge/Open%20in%20GitHub%20Codespaces-333?logo=github)](
+  https://codespaces.new/dwave-training/graph-mapping?quickstart=1)
+  
 # Graph Mapping
 
 To start this exercise, we'll look at a complete Ocean program that uses the
