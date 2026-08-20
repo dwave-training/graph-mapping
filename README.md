@@ -5,10 +5,7 @@
 # Graph Mapping
 
 To start this exercise, we'll look at a complete Ocean program that uses the
-package ``dwave.graphs``.  D-Wave.graph is an extension of NetworkX—a
-Python language package for exploration and analysis of networks and network
-algorithms—for users of D-Wave Systems.  <mark>The base problem of this exercise is
-the antenna selection problem from the [D-Wave Collection of
+package ``dwave.graphs``.  D-Wave-graphs provides tools for working with quantum processing unit (QPU) topology graphs, such as the Pegasus used on the AdvantageTM quantum computer, and implementations of graph-theory algorithms on D-Wave quantum computers and other binary quadratic model (BQM) samplers. <mark>The base problem of this exercise is the antenna selection problem from the [D-Wave Collection of
 Examples](https://github.com/dwave-examples/antenna-selection).<mark>
 
 ## Check the Original Program
