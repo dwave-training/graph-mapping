@@ -5,7 +5,7 @@
 # Graph Mapping
 
 To start this exercise, we'll look at a complete Ocean program that uses the
-package ``dwave-networkx``.  D-Wave NetworkX is an extension of NetworkX—a
+package ``dwave.graphs``.  D-Wave.graph is an extension of NetworkX—a
 Python language package for exploration and analysis of networks and network
 algorithms—for users of D-Wave Systems.  The base problem of this exercise is
 the antenna selection problem from the [D-Wave Collection of
@@ -33,7 +33,7 @@ useful.
 
 Open ``change_problem.py``.  This file is identical to ``original_program.py``,
 but is missing the following things:  (1) a graph definition, and (2) a graph
-algorithm from ``dwave-networkx``.  Fill in the functions ``create_graph`` and
+algorithm from ``dwave.graph``.  Fill in the functions ``create_graph`` and
 ``solve_problem`` in this program to solve the minimum vertex cover on the
 following graph.  
 

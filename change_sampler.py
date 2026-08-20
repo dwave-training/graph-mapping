@@ -15,8 +15,9 @@
 # Import networkx for graph tools
 import networkx as nx
 
-# Import dwave_networkx for d-wave graph tools/functions
-import dwave_networkx as dnx
+
+# Import dwave.graphs for d-wave graph tools/functions
+import dwave.graphs as dg
 
 # Import matplotlib.pyplot to draw graphs on screen
 import matplotlib
@@ -54,7 +55,7 @@ def solve_problem(G, sampler):
     '''
 
     # Find the maximum independent set, S
-    S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
+    S = dg.maximum_independent_set(G, sampler=sampler, num_reads=10)
 
     return S
 
