@@ -7,9 +7,9 @@
 To start this exercise, we'll look at a complete Ocean program that uses the
 package ``dwave.graphs``.  D-Wave.graph is an extension of NetworkX—a
 Python language package for exploration and analysis of networks and network
-algorithms—for users of D-Wave Systems.  The base problem of this exercise is
+algorithms—for users of D-Wave Systems.  <mark>The base problem of this exercise is
 the antenna selection problem from the [D-Wave Collection of
-Examples](https://github.com/dwave-examples/antenna-selection).
+Examples](https://github.com/dwave-examples/antenna-selection).<mark>
 
 ## Check the Original Program
 
