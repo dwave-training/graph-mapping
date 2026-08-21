@@ -5,8 +5,8 @@
 # Graph Mapping
 
 To start this exercise, we'll look at a complete Ocean program that uses the
-package ``dwave.graphs``.  D-Wave-graphs provides tools for working with quantum processing unit (QPU) topology graphs, such as the Pegasus used on the AdvantageTM quantum computer, and implementations of graph-theory algorithms on D-Wave quantum computers and other binary quadratic model (BQM) samplers. <mark>The base problem of this exercise is the antenna selection problem from the [D-Wave Collection of
-Examples](https://github.com/dwave-examples/antenna-selection).<mark>
+package ``dwave.graphs``.  dwave-graphs provides tools for working with quantum processing unit (QPU) topology graphs, such as the Pegasus used on the Advantage™ quantum computer, and implementations of graph-theory algorithms on D-Wave™ quantum computers and other binary quadratic model (BQM) samplers. The base problem of this exercise is the antenna selection problem from the [D-Wave Collection of
+Examples](https://github.com/dwave-examples/antenna-selection).
 
 ## Check the Original Program
 
