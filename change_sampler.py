@@ -15,7 +15,6 @@
 # Import networkx for graph tools
 import networkx as nx
 
-
 # Import dwave.graphs for d-wave graph tools/functions
 import dwave.graphs as dg
 
