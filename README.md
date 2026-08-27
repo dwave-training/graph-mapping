@@ -30,7 +30,7 @@ useful.
 
 Open ``change_problem.py``.  This file is identical to ``original_program.py``,
 but is missing the following things:  (1) a graph definition, and (2) a graph
-algorithm from ``dwave.graph``.  Fill in the functions ``create_graph`` and
+algorithm from ``dwave.graphs``.  Fill in the functions ``create_graph`` and
 ``solve_problem`` in this program to solve the minimum vertex cover on the
 following graph.  
 
