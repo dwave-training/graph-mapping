@@ -5,10 +5,7 @@
 # Graph Mapping
 
 To start this exercise, we'll look at a complete Ocean program that uses the
-package ``dwave-networkx``.  D-Wave NetworkX is an extension of NetworkX—a
-Python language package for exploration and analysis of networks and network
-algorithms—for users of D-Wave Systems.  The base problem of this exercise is
-the antenna selection problem from the [D-Wave Collection of
+package ``dwave.graphs``.  dwave-graphs provides tools for working with quantum processing unit (QPU) topology graphs, such as the Pegasus used on the Advantage™ quantum computer, and implementations of graph-theory algorithms on D-Wave™ quantum computers and other binary quadratic model (BQM) samplers. The base problem of this exercise is the antenna selection problem from the [D-Wave Collection of
 Examples](https://github.com/dwave-examples/antenna-selection).
 
 ## Check the Original Program
@@ -33,7 +30,7 @@ useful.
 
 Open ``change_problem.py``.  This file is identical to ``original_program.py``,
 but is missing the following things:  (1) a graph definition, and (2) a graph
-algorithm from ``dwave-networkx``.  Fill in the functions ``create_graph`` and
+algorithm from ``dwave.graphs``.  Fill in the functions ``create_graph`` and
 ``solve_problem`` in this program to solve the minimum vertex cover on the
 following graph.  
 
